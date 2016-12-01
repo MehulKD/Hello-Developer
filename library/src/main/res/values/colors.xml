@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/white</color>
+    <color name="colorPrimaryDark">@android:color/white</color>
+    <color name="colorAccent">@android:color/black</color>
+
+    <!--基础色板-->
+    <color name="blackDark">#333333</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="grey">#999999</color>
+    <color name="greySmoky">#CCCCCC</color>
+    <color name="yellow">#FFBF00</color>
+    <color name="red">#FF593F</color>
+
+    <!--字体主色-->
+    <color name="text_color_normal_up_10">@android:color/black</color>
+    <color name="text_color_normal">@color/blackDark</color>
+    <color name="text_color_normal_dark_0">#666666</color>
+    <color name="text_color_normal_dark_1">#999999</color>
+    <color name="text_color_normal_dark_2">#cccccc</color>
+    <color name="text_color_white">@android:color/white</color>
+    <color name="text_color_shadow">#000202</color>
+    <color name="text_color_hint_normal">#999999</color>
+
+    <!--通用背景-->
+    <color name="common_bg_transparent">#00000000</color>
+    <color name="common_bg_transparent_grey">#ee333333</color>
+    <color name="common_bg_transparent_gray">#88333333</color>
+    <color name="common_bg_activity">@android:color/white</color>
+    <color name="common_bg_spit">@color/greySmoky</color>
+    <color name="common_bg_image_placeholder">@color/greySmoky</color>
+    <color name="common_bg_transparent_dialog">#00ffffff</color>
+
+    <!--通用头部-->
+    <color name="common_bg_head_normal">@android:color/white</color>
+    <color name="common_bg_head_drak">@android:color/black</color>
+    <color name="common_bg_head_transparent">@android:color/transparent</color>
+
+    <!--特殊定义-->
+    <color name="bar_bg_normal">#EEEEEEEE</color>
+
+
+
+
+    <color name="common_bg_activity_bottom">@color/gray</color>
+
+</resources>
