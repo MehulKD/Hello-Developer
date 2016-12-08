@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/common_bg_activity_bottom"
     android:orientation="vertical">
 
     <ScrollView
@@ -16,26 +15,92 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <!--switch list-->
+            <LinearLayout
+                android:id="@+id/ly_switchlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_frame_top_and_bottom_white"
+                android:orientation="vertical" />
+
+            <!--后台服务-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/develop_vertical_margin"
+                android:background="@drawable/shape_frame_top_and_bottom_white"
+                android:padding="@dimen/develop_common_padding">
+
+                <TextView
+                    android:id="@+id/tv_title_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="后台服务"
+                    android:textColor="@color/develop_blackDark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_server"
+                    android:hint="输入地址"
+                    android:textColorHint="@color/develop_grey"
+                    android:textColor="@color/develop_blackDark"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_hostchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_url"
+                    android:hint="自定义切换"
+                    android:textSize="14dp"/>
+
+                <!--host list-->
+                <LinearLayout
+                    android:id="@+id/ly_hostlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/develop_vertical_margin"
+                    android:layout_below="@+id/btn_hostchange"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/tv_host"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_hostlist"
+                    android:layout_marginTop="@dimen/develop_vertical_margin"
+                    android:focusable="true"
+                    android:textColor="@color/develop_blackDark"
+                    android:focusableInTouchMode="true"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
             <!--程序信息-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/shape_frame_top_and_bottom_white">
+                android:layout_marginTop="@dimen/develop_vertical_margin"
+                android:background="@drawable/shape_frame_top_and_bottom_white"
+                android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/tv_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="20dp"
-                    android:textColor="@color/blackDark"
-                    android:lineSpacingExtra="@dimen/dp_small_very"  />
+                    android:lineSpacingExtra="2dp"
+                    android:padding="@dimen/develop_common_padding"
+                    android:textColor="@color/develop_blackDark" />
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/iv_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/dp_big"
-                android:layout_gravity="center" />
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/develop_vertical_margin" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

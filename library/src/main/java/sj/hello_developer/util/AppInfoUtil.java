@@ -7,6 +7,4 @@ package sj.hello_developer.util;
 public class AppInfoUtil {
 
     private static String IMEI = "";
-
-
 }
